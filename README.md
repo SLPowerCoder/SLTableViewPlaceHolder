@@ -1,5 +1,5 @@
 # SLTableViewPlaceHolder
-runtime实现tableView无数据状态显示展位图
+runtime实现tableView无数据状态显示占位图
 
 ![效果图](https://github.com/SLPowerCoder/SLTableViewPlaceHolder/blob/master/SLTableViewPlaceHolder/SLTableViewPlaceHolder.gif)
 
