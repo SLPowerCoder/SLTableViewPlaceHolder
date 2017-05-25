@@ -15,6 +15,8 @@
 		719BC6A81EC9E54A0042B0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719BC6A61EC9E54A0042B0C0 /* LaunchScreen.storyboard */; };
 		719BC6B31EC9E54A0042B0C0 /* SLTableViewPlaceHolderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 719BC6B21EC9E54A0042B0C0 /* SLTableViewPlaceHolderTests.m */; };
 		719BC6BE1EC9E54A0042B0C0 /* SLTableViewPlaceHolderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 719BC6BD1EC9E54A0042B0C0 /* SLTableViewPlaceHolderUITests.m */; };
+		719BC6CE1EC9E6090042B0C0 /* UITableView+SLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 719BC6CD1EC9E6090042B0C0 /* UITableView+SLTableViewPlaceHolder.m */; };
+		719BC6D01EC9F52B0042B0C0 /* bunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 719BC6CF1EC9F52B0042B0C0 /* bunny.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		719BC6B91EC9E54A0042B0C0 /* SLTableViewPlaceHolderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLTableViewPlaceHolderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		719BC6BD1EC9E54A0042B0C0 /* SLTableViewPlaceHolderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLTableViewPlaceHolderUITests.m; sourceTree = "<group>"; };
 		719BC6BF1EC9E54A0042B0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		719BC6CC1EC9E6090042B0C0 /* UITableView+SLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SLTableViewPlaceHolder.h"; sourceTree = "<group>"; };
+		719BC6CD1EC9E6090042B0C0 /* UITableView+SLTableViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SLTableViewPlaceHolder.m"; sourceTree = "<group>"; };
+		719BC6CF1EC9F52B0042B0C0 /* bunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bunny.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +106,12 @@
 		719BC6971EC9E54A0042B0C0 /* SLTableViewPlaceHolder */ = {
 			isa = PBXGroup;
 			children = (
+				719BC6CB1EC9E5ED0042B0C0 /* SLTableViewPlaceHolder */,
 				719BC69B1EC9E54A0042B0C0 /* AppDelegate.h */,
 				719BC69C1EC9E54A0042B0C0 /* AppDelegate.m */,
 				719BC69E1EC9E54A0042B0C0 /* ViewController.h */,
 				719BC69F1EC9E54A0042B0C0 /* ViewController.m */,
+				719BC6CF1EC9F52B0042B0C0 /* bunny.png */,
 				719BC6A11EC9E54A0042B0C0 /* Main.storyboard */,
 				719BC6A41EC9E54A0042B0C0 /* Assets.xcassets */,
 				719BC6A61EC9E54A0042B0C0 /* LaunchScreen.storyboard */,
@@ -138,6 +145,15 @@
 				719BC6BF1EC9E54A0042B0C0 /* Info.plist */,
 			);
 			path = SLTableViewPlaceHolderUITests;
+			sourceTree = "<group>";
+		};
+		719BC6CB1EC9E5ED0042B0C0 /* SLTableViewPlaceHolder */ = {
+			isa = PBXGroup;
+			children = (
+				719BC6CC1EC9E6090042B0C0 /* UITableView+SLTableViewPlaceHolder.h */,
+				719BC6CD1EC9E6090042B0C0 /* UITableView+SLTableViewPlaceHolder.m */,
+			);
+			path = SLTableViewPlaceHolder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +223,7 @@
 				TargetAttributes = {
 					719BC6941EC9E54A0042B0C0 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 329ZYF9D22;
 						ProvisioningStyle = Automatic;
 					};
 					719BC6AD1EC9E54A0042B0C0 = {
@@ -246,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719BC6D01EC9F52B0042B0C0 /* bunny.png in Resources */,
 				719BC6A81EC9E54A0042B0C0 /* LaunchScreen.storyboard in Resources */,
 				719BC6A51EC9E54A0042B0C0 /* Assets.xcassets in Resources */,
 				719BC6A31EC9E54A0042B0C0 /* Main.storyboard in Resources */,
@@ -273,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719BC6CE1EC9E6090042B0C0 /* UITableView+SLTableViewPlaceHolder.m in Sources */,
 				719BC6A01EC9E54A0042B0C0 /* ViewController.m in Sources */,
 				719BC69D1EC9E54A0042B0C0 /* AppDelegate.m in Sources */,
 				719BC69A1EC9E54A0042B0C0 /* main.m in Sources */,
@@ -426,7 +445,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 329ZYF9D22;
 				INFOPLIST_FILE = SLTableViewPlaceHolder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunlei.SLTableViewPlaceHolder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,7 +458,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 329ZYF9D22;
 				INFOPLIST_FILE = SLTableViewPlaceHolder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunlei.SLTableViewPlaceHolder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
