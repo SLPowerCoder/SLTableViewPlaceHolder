@@ -1,6 +1,8 @@
 # SLTableViewPlaceHolder
 runtime实现tableView数据状态显示展位图
 
+![效果图](https://github.com/SLPowerCoder/SLTableViewPlaceHolder/blob/master/SLTableViewPlaceHolder/SLTableViewPlaceHolder.gif)
+
 ## How to use
 只需要把分类拖进项目里即可，如果你想认为控制展位图是否显示，你还需要import "UITableView+SLTableViewPlaceHolder.h"头文件
 
