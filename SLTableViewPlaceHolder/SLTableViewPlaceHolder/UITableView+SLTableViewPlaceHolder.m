@@ -146,21 +146,20 @@ static NSString * sl_defaultPlaceHolder_key     =  @"sl_defaultPlaceHolder";
 
 void swizzleMethod(Class cls,SEL originalSelector,SEL swizzledSelector) {
     
+    //1.根据selector获取指向方法实现的指针
     Method originalMethod = class_getInstanceMethod(cls, originalSelector);
     Method swizzledMethod = class_getInstanceMethod(cls, swizzledSelector);
     
-    BOOL didAddMethod =
-    class_addMethod(cls,
-                    originalSelector,
-                    method_getImplementation(swizzledMethod),
-                    method_getTypeEncoding(swizzledMethod));
+    //2.给原方法添加实现
+    BOOL didAddMethod = class_addMethod(cls, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
     
+    //3.如果添加成功说明原方法还没有被实现，这也是我们为什么先添加，而不是直接exchange
     if (didAddMethod) {
         class_replaceMethod(cls,
                             swizzledSelector,
                             method_getImplementation(originalMethod),
                             method_getTypeEncoding(originalMethod));
-    } else {
+    } else { //如果原来的selector有实现的话，则会添加失败，这时已经证明了原方法有对应的实现，所以可以直接exchange了
         method_exchangeImplementations(originalMethod, swizzledMethod);
     }
 }
