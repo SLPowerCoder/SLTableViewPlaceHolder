@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		713B37AA1FD6877100E5C049 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713B37A91FD6877100E5C049 /* TableViewController.m */; };
 		713B37AD1FD6877E00E5C049 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 713B37AC1FD6877E00E5C049 /* CollectionViewController.m */; };
-		713B37D41FD6962400E5C049 /* UITableView+SLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 713B37D21FD6962400E5C049 /* UITableView+SLTableViewPlaceHolder.m */; };
 		719BC69A1EC9E54A0042B0C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 719BC6991EC9E54A0042B0C0 /* main.m */; };
 		719BC69D1EC9E54A0042B0C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 719BC69C1EC9E54A0042B0C0 /* AppDelegate.m */; };
 		719BC6A01EC9E54A0042B0C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 719BC69F1EC9E54A0042B0C0 /* ViewController.m */; };
@@ -45,8 +44,6 @@
 		713B37A91FD6877100E5C049 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		713B37AB1FD6877E00E5C049 /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		713B37AC1FD6877E00E5C049 /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
-		713B37D21FD6962400E5C049 /* UITableView+SLTableViewPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SLTableViewPlaceHolder.m"; sourceTree = "<group>"; };
-		713B37D31FD6962400E5C049 /* UITableView+SLTableViewPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SLTableViewPlaceHolder.h"; sourceTree = "<group>"; };
 		719BC6951EC9E54A0042B0C0 /* SLTableViewPlaceHolder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLTableViewPlaceHolder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719BC6991EC9E54A0042B0C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		719BC69B1EC9E54A0042B0C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -164,8 +161,6 @@
 		719BC6CB1EC9E5ED0042B0C0 /* SLTableViewPlaceHolder */ = {
 			isa = PBXGroup;
 			children = (
-				713B37D31FD6962400E5C049 /* UITableView+SLTableViewPlaceHolder.h */,
-				713B37D21FD6962400E5C049 /* UITableView+SLTableViewPlaceHolder.m */,
 				719BC6CC1EC9E6090042B0C0 /* UITableView+SLPlaceHolder.h */,
 				719BC6CD1EC9E6090042B0C0 /* UITableView+SLPlaceHolder.m */,
 			);
@@ -310,7 +305,6 @@
 			files = (
 				719BC6CE1EC9E6090042B0C0 /* UITableView+SLPlaceHolder.m in Sources */,
 				713B37AD1FD6877E00E5C049 /* CollectionViewController.m in Sources */,
-				713B37D41FD6962400E5C049 /* UITableView+SLTableViewPlaceHolder.m in Sources */,
 				713B37AA1FD6877100E5C049 /* TableViewController.m in Sources */,
 				719BC6A01EC9E54A0042B0C0 /* ViewController.m in Sources */,
 				719BC69D1EC9E54A0042B0C0 /* AppDelegate.m in Sources */,
