@@ -19,6 +19,9 @@
 		719BC6BE1EC9E54A0042B0C0 /* SLTableViewPlaceHolderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 719BC6BD1EC9E54A0042B0C0 /* SLTableViewPlaceHolderUITests.m */; };
 		719BC6CE1EC9E6090042B0C0 /* UITableView+SLPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 719BC6CD1EC9E6090042B0C0 /* UITableView+SLPlaceHolder.m */; };
 		719BC6D01EC9F52B0042B0C0 /* bunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 719BC6CF1EC9F52B0042B0C0 /* bunny.png */; };
+		719BC6CE1EC9E6090042B0C0 /* UITableView+SLTableViewPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 719BC6CD1EC9E6090042B0C0 /* UITableView+SLTableViewPlaceHolder.m */; };
+		719BC6D01EC9F52B0042B0C0 /* bunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 719BC6CF1EC9F52B0042B0C0 /* bunny.png */; };
+		73C5B3C61ED73452001EDAB4 /* SLTableViewPlaceHolder.gif in Resources */ = {isa = PBXBuildFile; fileRef = 73C5B3C51ED73452001EDAB4 /* SLTableViewPlaceHolder.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +121,7 @@
 				719BC69E1EC9E54A0042B0C0 /* ViewController.h */,
 				719BC69F1EC9E54A0042B0C0 /* ViewController.m */,
 				719BC6CF1EC9F52B0042B0C0 /* bunny.png */,
+				73C5B3C51ED73452001EDAB4 /* SLTableViewPlaceHolder.gif */,
 				719BC6A11EC9E54A0042B0C0 /* Main.storyboard */,
 				719BC6A41EC9E54A0042B0C0 /* Assets.xcassets */,
 				719BC6A61EC9E54A0042B0C0 /* LaunchScreen.storyboard */,
@@ -275,6 +279,7 @@
 			files = (
 				719BC6D01EC9F52B0042B0C0 /* bunny.png in Resources */,
 				719BC6A81EC9E54A0042B0C0 /* LaunchScreen.storyboard in Resources */,
+				73C5B3C61ED73452001EDAB4 /* SLTableViewPlaceHolder.gif in Resources */,
 				719BC6A51EC9E54A0042B0C0 /* Assets.xcassets in Resources */,
 				719BC6A31EC9E54A0042B0C0 /* Main.storyboard in Resources */,
 			);

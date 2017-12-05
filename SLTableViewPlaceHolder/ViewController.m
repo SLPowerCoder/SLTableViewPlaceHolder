@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TableViewController.h"
 #import "CollectionViewController.h"
+#import "UITableView+SLPlaceHolder.h"
 
 #define Screen_W [UIScreen mainScreen].bounds.size.width
 #define Screen_H [UIScreen mainScreen].bounds.size.height
@@ -43,6 +44,7 @@
     return cell;
 }
 
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (!indexPath.row) {
         TableViewController *table = [TableViewController new];
@@ -62,8 +64,7 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-        _tableView.rowHeight = 100;
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView.rowHeight = 50;
     }
     return _tableView;
 }
